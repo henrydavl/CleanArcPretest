@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CleanArhPretest</string>
+    <string name="title">Title: </string>
+    <string name="status">Status:</string>
+    <string name="na">-</string>
+    <string name="user_id">User Id:</string>
+    <string name="todo_id">Todo Id:</string>
+    <string name="randomize">Randomize</string>
+</resources>
