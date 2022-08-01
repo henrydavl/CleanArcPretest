@@ -4,8 +4,7 @@ import com.henry.cleanarhpretest.data.remote.TodoApi
 import com.henry.cleanarhpretest.data.repository.TodoRepositoryImpl
 import com.henry.cleanarhpretest.domain.repository.TodoRepository
 import com.henry.cleanarhpretest.domain.use_case.GetTodoUseCase
-import com.henry.cleanarhpretest.domain.use_case.TodoUseCase
-import dagger.Binds
+import com.henry.cleanarhpretest.use_case.TodoUseCase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

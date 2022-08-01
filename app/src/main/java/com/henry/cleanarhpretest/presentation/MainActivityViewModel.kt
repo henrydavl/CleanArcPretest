@@ -4,7 +4,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.henry.cleanarhpretest.domain.model.Todo
-import com.henry.cleanarhpretest.domain.use_case.TodoUseCase
+import com.henry.cleanarhpretest.use_case.TodoUseCase
 import com.henry.cleanarhpretest.utils.Resource
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.catch

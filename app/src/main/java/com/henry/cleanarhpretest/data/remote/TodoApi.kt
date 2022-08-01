@@ -1,8 +1,6 @@
 package com.henry.cleanarhpretest.data.remote
 
-import com.henry.cleanarhpretest.data.remote.dto.TodoDto
-import com.henry.cleanarhpretest.utils.Resource
-import kotlinx.coroutines.flow.Flow
+import com.henry.cleanarhpretest.data.dto.TodoDto
 import retrofit2.http.GET
 import retrofit2.http.Path
 

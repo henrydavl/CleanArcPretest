@@ -1,6 +1,6 @@
 package com.henry.cleanarhpretest.data.mapper
 
-import com.henry.cleanarhpretest.data.remote.dto.TodoDto
+import com.henry.cleanarhpretest.data.dto.TodoDto
 import com.henry.cleanarhpretest.domain.model.Todo
 
 fun TodoDto.toTodo(): Todo {

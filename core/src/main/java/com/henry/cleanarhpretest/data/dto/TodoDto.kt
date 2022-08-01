@@ -1,4 +1,4 @@
-package com.henry.cleanarhpretest.data.remote.dto
+package com.henry.cleanarhpretest.data.dto
 
 import com.squareup.moshi.Json
 
