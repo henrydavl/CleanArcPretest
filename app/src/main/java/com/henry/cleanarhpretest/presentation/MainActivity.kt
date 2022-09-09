@@ -53,12 +53,12 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun loadDetail(data: Todo?) {
+    private fun loadDetail(data: Todo?) = with(binding) {
         if (data != null) {
-            binding.tvTitle.text = data.title
-            binding.tvStatus.text = if (data.completed) "Completed" else "Incomplete"
-            binding.tvUserId.text = data.userId.toString()
-            binding.tvTodoId.text = data.id.toString()
+            tvTitle.text = data.title
+            tvStatus.text = if (data.completed) "Completed" else "Incomplete"
+            tvUserId.text = data.userId.toString()
+            tvTodoId.text = data.id.toString()
         }
     }
 
@@ -66,15 +66,15 @@ class MainActivity : AppCompatActivity() {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
 
-    private fun isLoading(isLoading: Boolean) {
+    private fun isLoading(isLoading: Boolean) = with(binding) {
         if (isLoading) {
-            binding.pbLoading.visibility = View.VISIBLE
-            binding.btnRandomize.visibility = View.INVISIBLE
-            binding.btnRandomize.isEnabled = false
+            pbLoading.visibility = View.VISIBLE
+            btnRandomize.visibility = View.INVISIBLE
+            btnRandomize.isEnabled = false
         } else {
-            binding.pbLoading.visibility = View.GONE
-            binding.btnRandomize.visibility = View.VISIBLE
-            binding.btnRandomize.isEnabled = true
+            pbLoading.visibility = View.GONE
+            btnRandomize.visibility = View.VISIBLE
+            btnRandomize.isEnabled = true
         }
     }
 }
