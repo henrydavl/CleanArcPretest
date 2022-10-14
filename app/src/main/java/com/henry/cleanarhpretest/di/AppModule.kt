@@ -19,7 +19,6 @@ import javax.inject.Singleton
 object AppModule {
 
     @Provides
-    @Singleton
     fun providesTodoApi(): TodoApi {
         return Retrofit.Builder()
             .baseUrl(TodoApi.BASE_URL)
@@ -29,13 +28,11 @@ object AppModule {
     }
 
     @Provides
-    @Singleton
     fun providesTodoRepository(api: TodoApi): TodoRepository {
         return TodoRepositoryImpl(api)
     }
 
     @Provides
-    @Singleton
     fun providesTodoUseCases(repository: TodoRepository): TodoUseCase {
         return TodoUseCase(
             getTodoUseCase = GetTodoUseCase(repository),
